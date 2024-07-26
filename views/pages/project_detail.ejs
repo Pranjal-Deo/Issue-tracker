@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+<h2><%= project.name %></h2>
+<p><%= project.description %></p>
+<p>Author: <%= project.author %></p>
+
+<h3>Issues</h3>
+<ul>
+    <% issues.forEach(issue => { %>
+        <li>
+            <h4><%= issue.title %></h4>
+            <p><%= issue.description %></p>
+            <p>Labels: <%= issue.labels.join(', ') %></p>
+            <p>Author: <%= issue.author %></p>
+        </li>
+    <% }) %>
+</ul>
+<a href="/issues/create/<%= project._id %>">Create Issue</a>
+<%- include('../partials/footer') %>
