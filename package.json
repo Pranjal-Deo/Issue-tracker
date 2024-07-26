@@ -2,8 +2,9 @@
   "name": "issue-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",  // Update this if necessary
   "scripts": {
+    "start": "node app.js",  // Change this line to use app.js
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
